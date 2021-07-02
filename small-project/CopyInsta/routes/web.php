@@ -34,3 +34,6 @@ Route::get('/profile/{user}/edit', 'ProfileController@edit')->name('profile.edit
 Route::patch('/profile/{user}', 'ProfileController@update')->name('profile.update');
 
 Route::post('follow/{user}','FollowController@store');
+
+// practice phpunit test
+Route::post('/book', 'BookController@store');
